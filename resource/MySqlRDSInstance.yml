@@ -1,0 +1,10 @@
+Database:
+      Type: AWS::RDS::DBInstance
+      Properties:
+        DBName: test
+        AllocatedStorage: '20'
+        DBInstanceClass: db.t2.micro
+        Engine: mysql
+        EngineVersion: "5.7.21"
+        MasterUsername: test
+        MasterUserPassword: password
